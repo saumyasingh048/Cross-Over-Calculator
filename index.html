@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross Over Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h3>Cross Over Calculator</h3>
+    </header>
+    <main>
+        <form name="clc">
+
+        
+        <div>
+            <input type="text" name="display" id="cal">
+        </div>
+        <div>
+            <input type="button" value="1" class="btn" id="one" onclick="clc.display.value += '1'">
+            <input type="button" value="2" class="btn" id="two" onclick="clc.display.value += '2'">
+            <input type="button" value="3" class="btn" id="three" onclick="clc.display.value += '3'">
+            <input type="button" value="+" class="btn" id="plus" onclick="clc.display.value += '+'">
+        </div>
+        <div>
+            <input type="button" value="4" class="btn" id="four" onclick="clc.display.value += '4'">
+            <input type="button" value="5" class="btn" id="five" onclick="clc.display.value += '5'">
+            <input type="button" value="6" class="btn" id="six" onclick="clc.display.value += '6'">
+            <input type="button" value="-" class="btn" id="minus" onclick="clc.display.value += '-'">
+        </div>
+        <div>
+            <input type="button" value="7" class="btn" id="seven" onclick="clc.display.value += '7'">
+            <input type="button" value="8" class="btn" id="eight" onclick="clc.display.value += '8'">
+            <input type="button" value="9" class="btn" id="nine" onclick="clc.display.value += '9'">
+            <input type="button" value="*" class="btn" id="mul" onclick="clc.display.value += '*'">
+        </div>
+        <div>
+            <input type="button" value="0" class="btn" id="zero" onclick="clc.display.value += '0'">
+            <input type="button" value="C" class="btn" id="C" onclick="clc.display.value = ''">
+            <input type="button" value="=" class="btn" id="equalto" onclick="clc.display.value = eval(clc.display.value)">
+            <input type="button" value="&#247;" class="btn" id="div" onclick="clc.display.value += '/'">
+        </div>
+    </form>
+    </main>
+</body>
+</html>
